@@ -2,9 +2,6 @@
 <?php
   $paragraph = ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facere ipsum odit suscipit atque sapiente enim. Quasi soluta dolor delectus excepturi vero dolores. Quisquam, quam? Atque qui fugiat deleniti quod!  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facere ipsum odit suscipit atque sapiente enim. Quasi soluta dolor delectus excepturi vero dolores. Quisquam, quam? Atque qui fugiat deleniti quod!';
   $newParagraph = explode('.', $paragraph);
-    foreach ($newParagraph as $singleParagraph) {
-        echo '<p> Paragrafo suddiviso:' . $singleParagraph . '</p>';
-    }
 ?>
 
 <!DOCTYPE html>
@@ -17,5 +14,10 @@
 </head>
 <body>
     <h1>Paragrafo: <?php echo $paragraph; ?></h1>
+    <?php
+        foreach ($newParagraph as $singleParagraph) {
+        echo '<p> Paragrafo suddiviso:' . $singleParagraph . '</p>';
+    }
+    ?>
 </body>
 </html>

@@ -27,16 +27,6 @@
         ],
     ];
 
-    foreach ($posts as $key => $post) {
-        echo '<p>' . $key . '</p>';
-        foreach ($post as $singlePost) {
-            echo '<ul>';
-            echo '<li>' . $singlePost['title'] . '</li>';
-            echo '<li>' . $singlePost['author'] . '</li>';
-            echo '<li>' . $singlePost['description'] . '</li>';
-            echo '</ul>';
-        }    
-    }
 ?>
 
 <!DOCTYPE html>
@@ -48,6 +38,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php 
+         foreach ($posts as $key => $post) {
+        echo '<p>' . $key . '</p>';
+        foreach ($post as $singlePost) {
+            echo '<ul>';
+            echo '<li>' . $singlePost['title'] . '</li>';
+            echo '<li>' . $singlePost['author'] . '</li>';
+            echo '<li>' . $singlePost['description'] . '</li>';
+            echo '</ul>';
+        }    
+    }
+    ?>
 </body>
 </html>
